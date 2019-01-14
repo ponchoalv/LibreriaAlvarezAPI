@@ -1,0 +1,9 @@
+2019-01-13 18:06:54 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "SCHEMA_MIGRATIONS" no encontrada
+Table "SCHEMA_MIGRATIONS" not found; SQL statement:
+SELECT 1 FROM schema_migrations [42102-197]
+2019-01-13 18:27:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Conversión de datos fallida, convirtiendo "201.0"
+Data conversion error converting "201.0"; SQL statement:
+SELECT * FROM precios
+WHERE code = ? [22018-197]

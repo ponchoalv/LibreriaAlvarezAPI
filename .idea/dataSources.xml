@@ -4,7 +4,6 @@
     <data-source source="LOCAL" name="libreria_dev.db" uuid="78bff2dc-f93a-408c-80c5-043e5453808a">
       <driver-ref>h2.unified</driver-ref>
       <synchronize>true</synchronize>
-      <configured-by-url>true</configured-by-url>
       <jdbc-driver>org.h2.Driver</jdbc-driver>
       <jdbc-url>jdbc:h2:./libreria_dev.db</jdbc-url>
     </data-source>

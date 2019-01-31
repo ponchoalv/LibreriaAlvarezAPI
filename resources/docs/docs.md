@@ -4,40 +4,48 @@ This page will help guide you through the first steps of building your site.
 
 #### Why are you seeing this page?
 
-The `home-routes` handler in the `libreria.routes.home` namespace
+The `home-routes` handler in the `libreria-alvarez-api.routes.home` namespace
 defines the route that invokes the `home-page` function whenever an HTTP
 request is made to the `/` URI using the `GET` method.
 
 ```
 (defroutes home-routes
-  (GET "/" []
-       (home-page))
-  (GET "/docs" []
-       (-> (response/ok (-> "docs/docs.md" io/resource slurp))
-           (response/header "Content-Type" "text/plain; charset=utf-8"))))
+  (GET "/" [] (home-page))
+  (GET "/about" [] (about-page)))
 ```
 
-The `home-page` function will in turn call the `libreria.layout/render` function
+The `home-page` function will in turn call the `libreria-alvarez-api.layout/render` function
 to render the HTML content:
 
 ```
 (defn home-page []
-  (layout/render "home.html"))
+  (layout/render
+    "home.html" {:docs (-> "docs/docs.md" io/resource slurp)}))
 ```
 
-The page contains a link to the compiled ClojureScript found in the `target/cljsbuild/public` folder:
+The `render` function will render the `home.html` template found in the `resources/templates`
+folder using a parameter map containing the `:docs` key. This key points to the
+contents of the `resources/docs/docs.md` file containing these instructions.
+
+
+The HTML templates are written using [Selmer](https://github.com/yogthos/Selmer) templating engine.
+
 
 ```
-{% script "/js/app.js" %}
+<div class="row">
+  <div class="col-sm-12">
+    {{docs|markdown}}
+  </div>
+</div>
 ```
 
-The rest of this page is rendered by ClojureScript found in the `src/cljs/libreria/core.cljs` file.
+<a class="btn btn-primary" href="http://www.luminusweb.net/docs/html_templating.md">learn more about HTML templating »</a>
 
 
 
 #### Organizing the routes
 
-The routes are aggregated and wrapped with middleware in the `libreria.handler` namespace:
+The routes are aggregated and wrapped with middleware in the `libreria-alvarez-api.handler` namespace:
 
 ```
 (defstate app
@@ -63,12 +71,12 @@ The second takes care of serializing and deserializing various encoding formats,
 
 #### Managing your middleware
 
-Request middleware functions are located under the `libreria.middleware` namespace.
+Request middleware functions are located under the `libreria-alvarez-api.middleware` namespace.
 
 This namespace is reserved for any custom middleware for the application. Some default middleware is
 already defined here. The middleware is assembled in the `wrap-base` function.
 
-Middleware used for development is placed in the `libreria.dev-middleware` namespace found in
+Middleware used for development is placed in the `libreria-alvarez-api.dev-middleware` namespace found in
 the `env/dev/clj/` source path.
 
 <a class="btn btn-primary" href="http://www.luminusweb.net/docs/middleware.md">learn more about middleware »</a>
@@ -79,8 +87,10 @@ the `env/dev/clj/` source path.
 
 If you haven't already, then please follow the steps below to configure your database connection and run the necessary migrations.
 
+* Create the database for your application.
+* Update the connection URL in the `dev-config.edn` and `test-config.edn` files with your database name and login credentials.
 * Run `lein run migrate` in the root of the project to create the tables.
-* Let `mount` know to start the database connection by `require`-ing `libreria.db.core` in some other namespace.
+* Let `mount` know to start the database connection by `require`-ing `libreria-alvarez-api.db.core` in some other namespace.
 * Restart the application.
 
 <a class="btn btn-primary" href="http://www.luminusweb.net/docs/database.md">learn more about database access »</a>

@@ -1,7 +1,7 @@
 -- :name insert-price! :! :n
 -- :doc genera un un registros en la base de precios
 INSERT INTO precios
-(desc, code, price, lista, fecha)
+("desc", "code", "price", "lista", "fecha")
 VALUES (:desc, :code, :price, :lista, :fecha)
 
 -- :name update-price! :! :n
@@ -31,7 +31,7 @@ SELECT * FROM precios
 
 -- :name get-loaded-dates :? :*
 -- :doc get last date from spreadsheets
-SELECT TOP 1 fecha FROM precios GROUP BY fecha ORDER BY fecha DESC
+SELECT fecha FROM precios GROUP BY fecha ORDER BY fecha DESC limit 1
 
 -- :name get-all-dates :? :*
 -- :doc get all dates loaded on spreadsheet database

@@ -3,14 +3,12 @@
   (:import (java.util Date)
            (java.text DecimalFormat)))
 
-
 (def know-columns-maps {:powerland {:A :code
                                     :B :desc
                                     :C :price}
                         :yo-yo {:A :desc
                                 :B :code
                                 :D :price}})
-
 
 (def decimal-format (DecimalFormat. "#,###,###,##0.00"))
 
@@ -34,7 +32,6 @@
           (filter filter-data)
           (rest)
           (map (partial format-data spreadsheet-name spreadsheet-date))))
-
 
 ;; Ejemplos de como usar la API.
 (def loaded-powerland-sheet

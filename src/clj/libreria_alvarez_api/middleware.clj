@@ -15,7 +15,8 @@
             [buddy.auth.middleware :refer [wrap-authentication wrap-authorization]]
             [buddy.auth.accessrules :refer [restrict]]
             [buddy.auth :refer [authenticated?]]
-            [buddy.auth.backends.session :refer [session-backend]])
+            [buddy.auth.backends.session :refer [session-backend]]
+            [ring.middleware.gzip :as gzip])
   (:import 
            ))
 
@@ -70,4 +71,5 @@
         (-> site-defaults
             (assoc-in [:security :anti-forgery] false)
             (dissoc :session)))
-      wrap-internal-error))
+      wrap-internal-error
+      ring.middleware.gzip/wrap-gzip))

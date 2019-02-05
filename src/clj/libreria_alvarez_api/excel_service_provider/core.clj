@@ -1,7 +1,8 @@
 (ns libreria-alvarez-api.excel-service-provider.core
   (:require [libreria-alvarez-api.excel-etl.core :as etl]
             [libreria-alvarez-api.db.core :as db])
-  (:import (java.text SimpleDateFormat)))
+  (:import (java.text SimpleDateFormat)
+           (java.time LocalDate)))
 
 (def date-formatter (SimpleDateFormat. "yyyy-MM-dd"))
 
@@ -16,7 +17,10 @@
   (db/get-price-by-date {:fecha date}))
 
 (defn retrieve-last-date []
-  (:fecha (first (db/get-loaded-dates))))
+  (let [last-date (:fecha (first (db/get-loaded-dates)))]
+    (if (not last-date)
+      (LocalDate/now)
+      last-date)))
 
 (defn retrieve-all-dates []
   (db/get-all-dates))

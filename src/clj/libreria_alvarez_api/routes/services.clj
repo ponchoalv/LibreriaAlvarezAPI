@@ -35,8 +35,6 @@
 
 (s/defschema TipoLista (s/enum :powerland :yo-yo))
 
-(s/defschema NombreLista (s/enum "POWERLAND" "YOYO" "YOYO-TOYS"))
-
 (s/defschema ListasCargadas [{:registros s/Int
                               :lista s/Str
                               :fecha LocalDate}])
@@ -66,7 +64,7 @@
         :multipart-params [file :- upload/TempFileUpload,
                            fecha :- LocalDate,
                            tipo-lista :- TipoLista,
-                           nombre-lista :- NombreLista,
+                           nombre-lista :- s/Str,
                            nombre-hoja :- s/Str]
         :summary     "Cargar una planilla con una lista y fecha especifica,
         el nombre de la hoja de la lista debe ser 'precios'"
@@ -103,4 +101,9 @@
         :return      s/Int
         :body-params [lista :- s/Str, fecha :- LocalDate]
         :summary     "Eliminar una lista por Nombre y Fecha"
-        (ok (price-service/delete-list-by-date-and-name lista fecha))))))
+        (ok (price-service/delete-list-by-date-and-name lista fecha)))
+
+      (GET "/get-list-types" []
+        :return  s/Any
+        :summary      "Los tipos de lista excel soportados por el sistema"
+        (ok (rest (s/explain TipoLista)))))))

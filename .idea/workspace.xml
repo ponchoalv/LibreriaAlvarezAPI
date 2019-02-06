@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ab97b68-4e73-4932-b209-dafaa5921de2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__amalloy_ring_gzip_middleware_0_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/html/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/public/asset-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/public/service-worker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/public/static/media/open-iconic.3cf97837.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/public/static/media/open-iconic.47151e87.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/public/static/media/open-iconic.527eff64.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/public/static/media/open-iconic.93cc7aa6.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/public/static/media/open-iconic.eca2c267.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev-config.edn" beforeDir="false" afterPath="$PROJECT_DIR$/dev-config.edn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libreria-alvarez-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libreria-alvarez-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.clj" beforeDir="false" afterPath="$PROJECT_DIR$/project.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/public/css/screen.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/public/img/warning_clojure.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clj/libreria_alvarez_api/excel_service_provider/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/clj/libreria_alvarez_api/excel_service_provider/core.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clj/libreria_alvarez_api/handler.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/clj/libreria_alvarez_api/handler.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clj/libreria_alvarez_api/middleware.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/clj/libreria_alvarez_api/middleware.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clj/libreria_alvarez_api/routes/home.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/clj/libreria_alvarez_api/routes/home.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clj/libreria_alvarez_api/routes/services.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/clj/libreria_alvarez_api/routes/services.clj" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/src/clj/libreria_alvarez_api/routes/home.clj">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="70" lean-forward="true" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
+              <caret line="9" column="70" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -59,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/clj/libreria_alvarez_api/routes/services.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="78" column="32" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="32" />
+            <state relative-caret-position="215">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
@@ -82,7 +62,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/clj/libreria_alvarez_api/routes/services.clj" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/b702ec14-c26d-4882-8dc3-c8878f5ae136/console.sql" />
         <option value="$PROJECT_DIR$/src/clj/libreria_alvarez_api/excel_etl/core.clj" />
         <option value="$PROJECT_DIR$/resources/migrations/20190113210323-pecios.up.sql" />
@@ -93,6 +72,7 @@
         <option value="$PROJECT_DIR$/src/clj/libreria_alvarez_api/middleware.clj" />
         <option value="$PROJECT_DIR$/src/clj/libreria_alvarez_api/routes/home.clj" />
         <option value="$PROJECT_DIR$/src/clj/libreria_alvarez_api/excel_service_provider/core.clj" />
+        <option value="$PROJECT_DIR$/src/clj/libreria_alvarez_api/routes/services.clj" />
       </list>
     </option>
   </component>
@@ -107,6 +87,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,8 +206,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -250,7 +230,7 @@
       <recent name="C:\Users\ponch\projects\libreria-alvarez-api\resources\sql" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1549330748883">{:repl-history {:ide [], :local [{:command &quot;(user/rollback)&quot;, :offset 15, :ns &quot;user&quot;} {:command &quot;(user/migrate)&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;(stop)&quot;, :offset 6, :ns &quot;user&quot;} {:command &quot;(start)&quot;, :offset 7, :ns &quot;user&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1549463430336">{:repl-history {:ide [], :local [{:command &quot;(user/rollback)&quot;, :offset 15, :ns &quot;user&quot;} {:command &quot;(user/migrate)&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;(stop)&quot;, :offset 6, :ns &quot;user&quot;} {:command &quot;(start)&quot;, :offset 7, :ns &quot;user&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -308,7 +288,8 @@
       <workItem from="1548945766708" duration="27000" />
       <workItem from="1548945844105" duration="3887000" />
       <workItem from="1548950413822" duration="6620000" />
-      <workItem from="1549300747053" duration="5187000" />
+      <workItem from="1549300747053" duration="6605000" />
+      <workItem from="1549383031722" duration="5444000" />
     </task>
     <task id="LOCAL-00001" summary="actualización de template y migración a postgresql">
       <created>1548951226745</created>
@@ -317,17 +298,24 @@
       <option name="project" value="LOCAL" />
       <updated>1548951226745</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Mejora para poder servir contenido estatico">
+      <created>1549330896794</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1549330896794</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17868000" />
+    <option name="totallyTimeSpent" value="24730000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22572815" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.1505295" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -357,7 +345,7 @@
       <window_info anchor="right" id="Leiningen" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="REPL" order="10" sideWeight="0.7508126" side_tool="true" visible="true" weight="0.60355985" />
+      <window_info active="true" anchor="right" id="REPL" order="10" sideWeight="0.7508126" side_tool="true" visible="true" weight="0.46801707" />
       <window_info anchor="right" id="Capture Analysis" order="11" />
     </layout>
   </component>
@@ -365,8 +353,10 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="actualización de template y migración a postgresql" />
-    <option name="LAST_COMMIT_MESSAGE" value="actualización de template y migración a postgresql" />
+    <MESSAGE value="Mejora para poder servir contenido estatico" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mejora para poder servir contenido estatico" />
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">
@@ -449,9 +439,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/public/static/js/main.fb96429e.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/public/static/js/main.fb96429e.js" />
     <entry file="file://$PROJECT_DIR$/dev-config.edn">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -494,17 +482,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/public/static/js/main.3251cd62.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/public/static/js/0.3f77e8b2.chunk.js.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret column="3115" selection-start-column="3115" selection-end-column="3115" />
-        </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/public/static/js/main.3251cd62.js" />
+    <entry file="file://$PROJECT_DIR$/resources/public/static/js/0.3f77e8b2.chunk.js.map" />
     <entry file="file://$PROJECT_DIR$/resources/html/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -545,17 +524,17 @@
     <entry file="file://$PROJECT_DIR$/src/clj/libreria_alvarez_api/middleware/formats.clj">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/libreria_alvarez_api/routes/home.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="70" lean-forward="true" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.10.0/clojure-1.10.0.jar!/clojure/core.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
           <caret line="3634" selection-start-line="3634" selection-end-line="3634" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/libreria_alvarez_api/routes/home.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="70" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -568,8 +547,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clj/libreria_alvarez_api/routes/services.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="78" column="32" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="32" />
+        <state relative-caret-position="215">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>

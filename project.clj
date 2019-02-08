@@ -71,5 +71,6 @@
                                (pjstadig.humane-test-output/activate!)]}
    :project/test {:jvm-opts ["-Dconf=test-config.edn"]
                   :resource-paths ["env/test/resources"]}
+   :project/prod {:jvm-opts ["-Dconf=prod-config.edn"]}
    :profiles/dev {}
    :profiles/test {}})

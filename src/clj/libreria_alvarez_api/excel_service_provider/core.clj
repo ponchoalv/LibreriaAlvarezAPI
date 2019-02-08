@@ -27,11 +27,6 @@
 (defn get-all-loaded-lists-json []
   (db/get-loaded-lists-json))
 
-
-(defn delete-list-by-date-and-name [lista fecha]
-  (db/delete-lista! {:lista lista
-                     :fecha fecha}))
-
 (defn delete-list-by-date-and-name-json [lista fecha]
   (db/delete-lista-json! {:lista lista
                           :fecha fecha}))

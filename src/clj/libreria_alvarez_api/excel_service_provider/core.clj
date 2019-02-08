@@ -24,9 +24,6 @@
 (defn retrieve-all-dates-json []
   (db/get-all-dates-json))
 
-(defn get-all-loaded-lists []
-  (db/get-loaded-lists))
-
 (defn get-all-loaded-lists-json []
   (db/get-loaded-lists-json))
 

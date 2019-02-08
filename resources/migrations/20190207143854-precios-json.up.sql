@@ -1,0 +1,5 @@
+CREATE TABLE "precios_json" (
+	"fecha" DATE NULL DEFAULT NULL,
+	"lista" VARCHAR(50) NULL DEFAULT NULL,
+	"precios" JSON NULL DEFAULT NULL
+)

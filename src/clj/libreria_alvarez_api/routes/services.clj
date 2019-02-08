@@ -25,11 +25,11 @@
   [_ binding acc]
   (update-in acc [:letks] into [binding `(:identity ~'+compojure-api-request+)]))
 
-(s/defschema PriceList [{:desc  s/Str
+(s/defschema PriceListJson [{:desc  s/Str
                          :code  s/Str
                          :price s/Num
                          :lista s/Str
-                         :fecha LocalDate}])
+                         :fecha s/Str}])
 
 (s/defschema PriceListDates [{:fecha LocalDate}])
 
@@ -55,11 +55,6 @@
     (context "/api" []
       :tags ["libreria alvarez"]
 
-      (GET "/all-prices" []
-        :return       PriceList
-        :summary      "Return all prices on de DB"
-        (ok (price-service/retrieve-all-prices)))
-
       (POST "/cargar-lista" []
         :multipart-params [file :- upload/TempFileUpload,
                            fecha :- LocalDate,
@@ -69,39 +64,39 @@
         :summary     "Cargar una planilla con una lista y fecha especifica,
         el nombre de la hoja de la lista debe ser 'precios'"
         (ok (let [lista-in-memory (etl/load-spread-sheet
-                                    (clojure.java.io/input-stream
-                                      (clojure.java.io/file (:tempfile file)))
-                                    nombre-hoja
-                                    (tipo-lista etl/know-columns-maps) nombre-lista fecha)]
-              (price-service/load-datasheet-on-db lista-in-memory)
+                                       (clojure.java.io/input-stream
+                                         (clojure.java.io/file (:tempfile file)))
+                                       nombre-hoja
+                                       (tipo-lista etl/know-columns-maps) nombre-lista fecha)]
+              (price-service/load-datasheet-on-db-json fecha nombre-lista lista-in-memory)
               {:success true})))
 
       (GET "/prices-by-fecha" []
-        :return      PriceList
+        :return      PriceListJson
         :query-params [fecha :- LocalDate]
         :summary     "Return prices on a certain date"
-        (ok (price-service/retrieve-all-prices-by-date fecha)))
+        (ok (price-service/retrieve-all-prices-by-date-json fecha)))
 
       (GET "/get-last-date" []
         :return      LocalDate
         :summary     "Return last date loaded"
-        (ok (price-service/retrieve-last-date)))
+        (ok (price-service/retrieve-last-date-json)))
 
       (GET "/get-all-dates" []
         :return      PriceListDates
         :summary     "Return all dates loaded"
-        (ok (price-service/retrieve-all-dates)))
+        (ok (price-service/retrieve-all-dates-json)))
 
       (GET "/get-all-loaded-lists" []
         :return      ListasCargadas
         :summary     "Return last date loaded"
-        (ok (price-service/get-all-loaded-lists)))
+        (ok (price-service/get-all-loaded-lists-json)))
 
       (POST "/delete-list-by-date-and-name" []
         :return      s/Int
         :body-params [lista :- s/Str, fecha :- LocalDate]
         :summary     "Eliminar una lista por Nombre y Fecha"
-        (ok (price-service/delete-list-by-date-and-name lista fecha)))
+        (ok (price-service/delete-list-by-date-and-name-json lista fecha)))
 
       (GET "/get-list-types" []
         :return  s/Any

@@ -31,7 +31,7 @@
           (s/select-columns columns-map)
           (filter filter-data)
           (rest)
-          (map (partial format-data spreadsheet-name spreadsheet-date))))
+          (mapv (partial format-data spreadsheet-name spreadsheet-date))))
 
 ;; Ejemplos de como usar la API.
 (def loaded-powerland-sheet

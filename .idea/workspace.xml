@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1ab97b68-4e73-4932-b209-dafaa5921de2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clj/libreria_alvarez_api/routes/home.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/clj/libreria_alvarez_api/routes/home.clj" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,17 +30,50 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/clj/libreria_alvarez_api/core.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
+            <state relative-caret-position="850">
               <caret line="50" column="61" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/clj/libreria_alvarez_api/routes/services.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
+            <state relative-caret-position="779">
               <caret line="104" selection-start-line="104" selection-end-line="104" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/clj/libreria_alvarez_api/routes/home.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.nrepl-port">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Capstanfile">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Procfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -47,17 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/prod-config.edn">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="793">
+              <caret line="75" selection-start-line="75" selection-end-line="75" />
             </state>
           </provider>
         </entry>
@@ -90,17 +115,17 @@
         <option value="$PROJECT_DIR$/resources/migrations/20190113210323-pecios.up.sql" />
         <option value="$PROJECT_DIR$/src/clj/libreria_alvarez_api/middleware.clj" />
         <option value="$PROJECT_DIR$/src/clj/libreria_alvarez_api/handler.clj" />
-        <option value="$PROJECT_DIR$/src/clj/libreria_alvarez_api/routes/home.clj" />
         <option value="$PROJECT_DIR$/resources/sql/queries.sql" />
         <option value="$PROJECT_DIR$/env/prod/resources/logback.xml" />
         <option value="$PROJECT_DIR$/src/clj/libreria_alvarez_api/excel_service_provider/core.clj" />
         <option value="$PROJECT_DIR$/src/clj/libreria_alvarez_api/core.clj" />
         <option value="$PROJECT_DIR$/project.clj" />
         <option value="$PROJECT_DIR$/src/clj/libreria_alvarez_api/routes/services.clj" />
+        <option value="$PROJECT_DIR$/src/clj/libreria_alvarez_api/routes/home.clj" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -111,7 +136,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -182,18 +206,11 @@
               <item name="clj" type="462c0819:PsiDirectoryNode" />
               <item name="libreria_alvarez_api" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="LibreriaAlvarezAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LibreriaAlvarezAPI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="clj" type="462c0819:PsiDirectoryNode" />
-              <item name="libreria_alvarez_api" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -222,7 +239,7 @@
       <recent name="C:\Users\ponch\projects\libreria-alvarez-api\resources\migrations" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1549662118733">{:repl-history {:ide [], :local [{:command &quot;(user/rollback)&quot;, :offset 15, :ns &quot;user&quot;} {:command &quot;(user/migrate)&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;(s/explain-input-schema TipoLista)&quot;, :offset 34, :ns &quot;libreria-alvarez-api.routes.services&quot;} {:command &quot;(s/explain TipoLista)&quot;, :offset 21, :ns &quot;libreria-alvarez-api.routes.services&quot;} {:command &quot;(stop)&quot;, :offset 6, :ns &quot;user&quot;} {:command &quot;(db/insert-price-list! {:fecha \&quot;2019-02-06\&quot;\n                        :lista \&quot;POWERLAND\&quot;\n                        :precios [{:desc \&quot;pepe\&quot;\n                                   :lista \&quot;POWERLAND\&quot;\n                                   :fecha \&quot;2019-02-06\&quot;}\n                                  {:desc \&quot;pepe\&quot;\n                                   :lista \&quot;POWERLAND\&quot;\n                                   :fecha \&quot;2019-02-06\&quot;}\n                                  {:desc \&quot;pepe\&quot;\n                                   :lista \&quot;POWERLAND\&quot;\n                                   :fecha \&quot;2019-02-06\&quot;}\n                                  {:desc \&quot;pepe\&quot;\n                                   :lista \&quot;POWERLAND\&quot;\n                                   :fecha \&quot;2019-02-06\&quot;}\n                                  {:desc \&quot;pepe\&quot;\n                                   :lista \&quot;POWERLAND\&quot;\n                                   :fecha \&quot;2019-02-06\&quot;}\n                                  ]})&quot;, :offset 914, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/insert-price-list! {:fecha   (Date.)\n                        :lista   \&quot;POWERLAND\&quot;\n                        :precios [{:desc  \&quot;pepe\&quot;\n                                   :lista \&quot;POWERLAND\&quot;\n                                   :fecha \&quot;2019-02-06\&quot;}\n                                  {:desc  \&quot;pepe\&quot;\n                                   :lista \&quot;POWERLAND\&quot;\n                                   :fecha \&quot;2019-02-06\&quot;}\n                                  {:desc  \&quot;pepe\&quot;\n                                   :lista \&quot;POWERLAND\&quot;\n                                   :fecha \&quot;2019-02-06\&quot;}\n                                  {:desc  \&quot;pepe\&quot;\n                                   :lista \&quot;POWERLAND\&quot;\n                                   :fecha \&quot;2019-02-06\&quot;}\n                                  {:desc  \&quot;pepe\&quot;\n                                   :lista \&quot;POWERLAND\&quot;\n                                   :fecha \&quot;2019-02-06\&quot;}\n                                  ]})&quot;, :offset 918, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/insert-price-list! {:fecha   (Date.)\n                        :lista   \&quot;POWERLAND\&quot;\n                        :precios {[{:desc  \&quot;pepe\&quot;\n                                    :lista \&quot;POWERLAND\&quot;\n                                    :fecha \&quot;2019-02-06\&quot;}\n                                   {:desc  \&quot;pepe\&quot;\n                                    :lista \&quot;POWERLAND\&quot;\n                                    :fecha \&quot;2019-02-06\&quot;}\n                                   {:desc  \&quot;pepe\&quot;\n                                    :lista \&quot;POWERLAND\&quot;\n                                    :fecha \&quot;2019-02-06\&quot;}\n                                   {:desc  \&quot;pepe\&quot;\n                                    :lista \&quot;POWERLAND\&quot;\n                                    :fecha \&quot;2019-02-06\&quot;}\n                                   {:desc  \&quot;pepe\&quot;\n                                    :lista \&quot;POWERLAND\&quot;\n                                    :fecha \&quot;2019-02-06\&quot;}\n                                   ]}})&quot;, :offset 935, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/insert-price-list! {:fecha   (Date.)\n                        :lista   \&quot;POWERLAND\&quot;\n                        :precios { :data [{:desc  \&quot;pepe\&quot;\n                                    :lista \&quot;POWERLAND\&quot;\n                                    :fecha \&quot;2019-02-06\&quot;}\n                                   {:desc  \&quot;pepe\&quot;\n                                    :lista \&quot;POWERLAND\&quot;\n                                    :fecha \&quot;2019-02-06\&quot;}\n                                   {:desc  \&quot;pepe\&quot;\n                                    :lista \&quot;POWERLAND\&quot;\n                                    :fecha \&quot;2019-02-06\&quot;}\n                                   {:desc  \&quot;pepe\&quot;\n                                    :lista \&quot;POWERLAND\&quot;\n                                    :fecha \&quot;2019-02-06\&quot;}\n                                   {:desc  \&quot;pepe\&quot;\n                                    :lista \&quot;POWERLAND\&quot;\n                                    :fecha \&quot;2019-02-06\&quot;}\n                                   ]}})&quot;, :offset 942, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/get-all-prices {:fecha (Date.)})&quot;, :offset 36, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/get-price-lists {:fecha (Date.)})&quot;, :offset 37, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(get-in  [:precios :data] (db/get-price-lists {:fecha (Date.)}))&quot;, :offset 64, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(get-in (db/get-price-lists {:fecha (Date.)}) [:precios :data])&quot;, :offset 63, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(get-in (db/get-price-lists {:fecha (Date.)}) [:precios])&quot;, :offset 46} {:command &quot;(get-in (first (db/get-price-lists {:fecha (Date.)})) [:precios :data])&quot;, :offset 71, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/get-loaded-dates-json)&quot;, :offset 26, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/get-all-dates-json)&quot;, :offset 23, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(mapv #(+ % 1) (range 10))&quot;, :offset 26, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/insert-price-list! {:fecha   (Date.)\n                        :lista   \&quot;POWERLAND\&quot;\n                        :precios [1 2 3]})&quot;, :offset 128, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(get-in (first (db/get-price-lists {:fecha \&quot;2019-02-07\&quot;})) [:precios :data])&quot;, :offset 76, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/get-loaded-lists)&quot;, :offset 21, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/get-loaded-lists-json)&quot;, :offset 26, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(conj [1 2 3 ] [3 4 5])&quot;, :offset 23, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(conj [1 2 3 ] (3 4 5))&quot;, :offset 23, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(conj [1 2 3] 3 4 5)&quot;, :offset 20, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(into [] [1 2 3 4] [4 5 6 7] )&quot;, :offset 30, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(into [] ([1 2 3 4] [4 5 6 7]))&quot;, :offset 31, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(into [] [4 5 6 7])&quot;, :offset 19, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(into {} [4 5 6 7])&quot;, :offset 19, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(into {} [:ss 23 :sd 45 :sa 23])&quot;, :offset 32, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(concat [1 2 3 4] [5 3 2 5] [3 2 4 5])&quot;, :offset 38, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(reduce concat [{:a 2 :b 4} {:c 4 :n 6} {:d 4 :z 43}])&quot;, :offset 54, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(into\n  (reduce concat [{:a 2 :b 4} {:c 4 :n 6} {:d 4 :z 43}]))&quot;, :offset 63, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(into {}\n  (reduce concat [{:a 2 :b 4} {:c 4 :n 6} {:d 4 :z 43}]))&quot;, :offset 66, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(map #(into {} %)\n     (reduce concat [{:a 2 :b 4} {:c 4 :n 6} {:d 4 :z 43}]))&quot;, :offset 78, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(cons [] )&quot;, :offset 9} {:command &quot;(concat [{:a 2 :b 4}] [{:c 4 :n 6}] [{:d 4 :z 43}])&quot;, :offset 51, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(concat [{:a 2 :b 4} {:c 23 :t 42}] [{:c 4 :n 6}] [{:d 4 :z 43}])&quot;, :offset 65, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(reduce concat [{:a 2 :b 4} {:c 23 :t 42}] [{:c 4 :n 6}] [{:d 4 :z 43}])&quot;, :offset 72, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(reduce concat ([{:a 2 :b 4} {:c 23 :t 42}] [{:c 4 :n 6}] [{:d 4 :z 43}]))&quot;, :offset 74, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/get-price-lists)&quot;, :offset 20, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/get-price-lists {:fecha \&quot;2019-02-07\&quot;})&quot;, :offset 42, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/get-price-lists {:fecha (Date. \&quot;2019-02-07\&quot;)})&quot;, :offset 50, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/get-price-lists {:fecha (date-formatter/parse \&quot;2019-02-07\&quot;)})&quot;, :offset 65, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/get-price-lists {:fecha (.parse date-formatter \&quot;2019-02-07\&quot;)})&quot;, :offset 66, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(def xform (map #(get-in % [:precios :data])))&quot;, :offset 46, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(transduce xform concat (db/get-price-lists {:fecha (.parse date-formatter \&quot;2019-02-07\&quot;)}))&quot;, :offset 91, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(def xform )&quot;, :offset 12} {:command &quot;(create-migration \&quot;precios-json\&quot;)&quot;, :offset 33, :ns &quot;user&quot;} {:command &quot;(rollback)&quot;, :offset 10, :ns &quot;user&quot;} {:command &quot;(migrate)&quot;, :offset 9, :ns &quot;user&quot;} {:command &quot;(start)&quot;, :offset 7, :ns &quot;user&quot;} {:command &quot;(response/file-response \&quot;index.html\&quot; {:root \&quot;/resources/public\&quot;})&quot;, :offset 65, :ns &quot;libreria-alvarez-api.routes.home&quot;} {:command &quot;(response/file-response \&quot;index.html\&quot; {:root \&quot;resources/public\&quot;})&quot;, :offset 64, :ns &quot;libreria-alvarez-api.routes.home&quot;} {:command &quot;(response/file-response \&quot;index.html\&quot; {:root \&quot;public/\&quot;})&quot;, :offset 55, :ns &quot;libreria-alvarez-api.routes.home&quot;} {:command &quot;(response/file-response \&quot;index.html\&quot; {:root \&quot;resources/public/\&quot;})&quot;, :offset 65, :ns &quot;libreria-alvarez-api.routes.home&quot;} {:command &quot;(ns user)&quot;, :offset 9, :ns &quot;libreria-alvarez-api.routes.home&quot;} {:command &quot;(restart)&quot;, :offset 9, :ns &quot;user&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1549902125806">{:repl-history {:ide [], :local [{:command &quot;(user/rollback)&quot;, :offset 15, :ns &quot;user&quot;} {:command &quot;(user/migrate)&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;(s/explain-input-schema TipoLista)&quot;, :offset 34, :ns &quot;libreria-alvarez-api.routes.services&quot;} {:command &quot;(s/explain TipoLista)&quot;, :offset 21, :ns &quot;libreria-alvarez-api.routes.services&quot;} {:command &quot;(stop)&quot;, :offset 6, :ns &quot;user&quot;} {:command &quot;(db/insert-price-list! {:fecha \&quot;2019-02-06\&quot;\n                        :lista \&quot;POWERLAND\&quot;\n                        :precios [{:desc \&quot;pepe\&quot;\n                                   :lista \&quot;POWERLAND\&quot;\n                                   :fecha \&quot;2019-02-06\&quot;}\n                                  {:desc \&quot;pepe\&quot;\n                                   :lista \&quot;POWERLAND\&quot;\n                                   :fecha \&quot;2019-02-06\&quot;}\n                                  {:desc \&quot;pepe\&quot;\n                                   :lista \&quot;POWERLAND\&quot;\n                                   :fecha \&quot;2019-02-06\&quot;}\n                                  {:desc \&quot;pepe\&quot;\n                                   :lista \&quot;POWERLAND\&quot;\n                                   :fecha \&quot;2019-02-06\&quot;}\n                                  {:desc \&quot;pepe\&quot;\n                                   :lista \&quot;POWERLAND\&quot;\n                                   :fecha \&quot;2019-02-06\&quot;}\n                                  ]})&quot;, :offset 914, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/insert-price-list! {:fecha   (Date.)\n                        :lista   \&quot;POWERLAND\&quot;\n                        :precios [{:desc  \&quot;pepe\&quot;\n                                   :lista \&quot;POWERLAND\&quot;\n                                   :fecha \&quot;2019-02-06\&quot;}\n                                  {:desc  \&quot;pepe\&quot;\n                                   :lista \&quot;POWERLAND\&quot;\n                                   :fecha \&quot;2019-02-06\&quot;}\n                                  {:desc  \&quot;pepe\&quot;\n                                   :lista \&quot;POWERLAND\&quot;\n                                   :fecha \&quot;2019-02-06\&quot;}\n                                  {:desc  \&quot;pepe\&quot;\n                                   :lista \&quot;POWERLAND\&quot;\n                                   :fecha \&quot;2019-02-06\&quot;}\n                                  {:desc  \&quot;pepe\&quot;\n                                   :lista \&quot;POWERLAND\&quot;\n                                   :fecha \&quot;2019-02-06\&quot;}\n                                  ]})&quot;, :offset 918, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/insert-price-list! {:fecha   (Date.)\n                        :lista   \&quot;POWERLAND\&quot;\n                        :precios {[{:desc  \&quot;pepe\&quot;\n                                    :lista \&quot;POWERLAND\&quot;\n                                    :fecha \&quot;2019-02-06\&quot;}\n                                   {:desc  \&quot;pepe\&quot;\n                                    :lista \&quot;POWERLAND\&quot;\n                                    :fecha \&quot;2019-02-06\&quot;}\n                                   {:desc  \&quot;pepe\&quot;\n                                    :lista \&quot;POWERLAND\&quot;\n                                    :fecha \&quot;2019-02-06\&quot;}\n                                   {:desc  \&quot;pepe\&quot;\n                                    :lista \&quot;POWERLAND\&quot;\n                                    :fecha \&quot;2019-02-06\&quot;}\n                                   {:desc  \&quot;pepe\&quot;\n                                    :lista \&quot;POWERLAND\&quot;\n                                    :fecha \&quot;2019-02-06\&quot;}\n                                   ]}})&quot;, :offset 935, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/insert-price-list! {:fecha   (Date.)\n                        :lista   \&quot;POWERLAND\&quot;\n                        :precios { :data [{:desc  \&quot;pepe\&quot;\n                                    :lista \&quot;POWERLAND\&quot;\n                                    :fecha \&quot;2019-02-06\&quot;}\n                                   {:desc  \&quot;pepe\&quot;\n                                    :lista \&quot;POWERLAND\&quot;\n                                    :fecha \&quot;2019-02-06\&quot;}\n                                   {:desc  \&quot;pepe\&quot;\n                                    :lista \&quot;POWERLAND\&quot;\n                                    :fecha \&quot;2019-02-06\&quot;}\n                                   {:desc  \&quot;pepe\&quot;\n                                    :lista \&quot;POWERLAND\&quot;\n                                    :fecha \&quot;2019-02-06\&quot;}\n                                   {:desc  \&quot;pepe\&quot;\n                                    :lista \&quot;POWERLAND\&quot;\n                                    :fecha \&quot;2019-02-06\&quot;}\n                                   ]}})&quot;, :offset 942, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/get-all-prices {:fecha (Date.)})&quot;, :offset 36, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/get-price-lists {:fecha (Date.)})&quot;, :offset 37, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(get-in  [:precios :data] (db/get-price-lists {:fecha (Date.)}))&quot;, :offset 64, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(get-in (db/get-price-lists {:fecha (Date.)}) [:precios :data])&quot;, :offset 63, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(get-in (db/get-price-lists {:fecha (Date.)}) [:precios])&quot;, :offset 46} {:command &quot;(get-in (first (db/get-price-lists {:fecha (Date.)})) [:precios :data])&quot;, :offset 71, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/get-loaded-dates-json)&quot;, :offset 26, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/get-all-dates-json)&quot;, :offset 23, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(mapv #(+ % 1) (range 10))&quot;, :offset 26, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/insert-price-list! {:fecha   (Date.)\n                        :lista   \&quot;POWERLAND\&quot;\n                        :precios [1 2 3]})&quot;, :offset 128, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(get-in (first (db/get-price-lists {:fecha \&quot;2019-02-07\&quot;})) [:precios :data])&quot;, :offset 76, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/get-loaded-lists)&quot;, :offset 21, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/get-loaded-lists-json)&quot;, :offset 26, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(conj [1 2 3 ] [3 4 5])&quot;, :offset 23, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(conj [1 2 3 ] (3 4 5))&quot;, :offset 23, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(conj [1 2 3] 3 4 5)&quot;, :offset 20, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(into [] [1 2 3 4] [4 5 6 7] )&quot;, :offset 30, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(into [] ([1 2 3 4] [4 5 6 7]))&quot;, :offset 31, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(into [] [4 5 6 7])&quot;, :offset 19, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(into {} [4 5 6 7])&quot;, :offset 19, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(into {} [:ss 23 :sd 45 :sa 23])&quot;, :offset 32, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(concat [1 2 3 4] [5 3 2 5] [3 2 4 5])&quot;, :offset 38, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(reduce concat [{:a 2 :b 4} {:c 4 :n 6} {:d 4 :z 43}])&quot;, :offset 54, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(into\n  (reduce concat [{:a 2 :b 4} {:c 4 :n 6} {:d 4 :z 43}]))&quot;, :offset 63, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(into {}\n  (reduce concat [{:a 2 :b 4} {:c 4 :n 6} {:d 4 :z 43}]))&quot;, :offset 66, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(map #(into {} %)\n     (reduce concat [{:a 2 :b 4} {:c 4 :n 6} {:d 4 :z 43}]))&quot;, :offset 78, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(cons [] )&quot;, :offset 9} {:command &quot;(concat [{:a 2 :b 4}] [{:c 4 :n 6}] [{:d 4 :z 43}])&quot;, :offset 51, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(concat [{:a 2 :b 4} {:c 23 :t 42}] [{:c 4 :n 6}] [{:d 4 :z 43}])&quot;, :offset 65, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(reduce concat [{:a 2 :b 4} {:c 23 :t 42}] [{:c 4 :n 6}] [{:d 4 :z 43}])&quot;, :offset 72, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(reduce concat ([{:a 2 :b 4} {:c 23 :t 42}] [{:c 4 :n 6}] [{:d 4 :z 43}]))&quot;, :offset 74, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/get-price-lists)&quot;, :offset 20, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/get-price-lists {:fecha \&quot;2019-02-07\&quot;})&quot;, :offset 42, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/get-price-lists {:fecha (Date. \&quot;2019-02-07\&quot;)})&quot;, :offset 50, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/get-price-lists {:fecha (date-formatter/parse \&quot;2019-02-07\&quot;)})&quot;, :offset 65, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(db/get-price-lists {:fecha (.parse date-formatter \&quot;2019-02-07\&quot;)})&quot;, :offset 66, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(def xform (map #(get-in % [:precios :data])))&quot;, :offset 46, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(transduce xform concat (db/get-price-lists {:fecha (.parse date-formatter \&quot;2019-02-07\&quot;)}))&quot;, :offset 91, :ns &quot;libreria-alvarez-api.excel-service-provider.core&quot;} {:command &quot;(def xform )&quot;, :offset 12} {:command &quot;(create-migration \&quot;precios-json\&quot;)&quot;, :offset 33, :ns &quot;user&quot;} {:command &quot;(rollback)&quot;, :offset 10, :ns &quot;user&quot;} {:command &quot;(migrate)&quot;, :offset 9, :ns &quot;user&quot;} {:command &quot;(start)&quot;, :offset 7, :ns &quot;user&quot;} {:command &quot;(response/file-response \&quot;index.html\&quot; {:root \&quot;/resources/public\&quot;})&quot;, :offset 65, :ns &quot;libreria-alvarez-api.routes.home&quot;} {:command &quot;(response/file-response \&quot;index.html\&quot; {:root \&quot;resources/public\&quot;})&quot;, :offset 64, :ns &quot;libreria-alvarez-api.routes.home&quot;} {:command &quot;(response/file-response \&quot;index.html\&quot; {:root \&quot;public/\&quot;})&quot;, :offset 55, :ns &quot;libreria-alvarez-api.routes.home&quot;} {:command &quot;(response/file-response \&quot;index.html\&quot; {:root \&quot;resources/public/\&quot;})&quot;, :offset 65, :ns &quot;libreria-alvarez-api.routes.home&quot;} {:command &quot;(ns user)&quot;, :offset 9, :ns &quot;libreria-alvarez-api.routes.home&quot;} {:command &quot;(restart)&quot;, :offset 9, :ns &quot;user&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -284,6 +301,7 @@
       <workItem from="1548950413822" duration="6620000" />
       <workItem from="1549300747053" duration="6605000" />
       <workItem from="1549383031722" duration="32175000" />
+      <workItem from="1549901476295" duration="627000" />
     </task>
     <task id="LOCAL-00001" summary="actualización de template y migración a postgresql">
       <created>1548951226745</created>
@@ -338,12 +356,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51461000" />
+    <option name="totallyTimeSpent" value="52088000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21785174" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13219616" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -374,7 +393,7 @@
       <window_info anchor="right" id="Leiningen" order="7" sideWeight="0.49945828" weight="0.32995737" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info active="true" anchor="right" id="REPL" order="10" sideWeight="0.5005417" side_tool="true" visible="true" weight="0.46822995" />
+      <window_info active="true" anchor="right" id="REPL" order="10" sideWeight="0.5005417" side_tool="true" visible="true" weight="0.42697227" />
       <window_info anchor="right" id="Capture Analysis" order="11" />
     </layout>
   </component>
@@ -484,9 +503,7 @@
     <entry file="file://$PROJECT_DIR$/env/dev/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/public/static/css/main.23e9e4fa.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/public/static/css/main.23e9e4fa.css" />
     <entry file="jar://$MAVEN_REPOSITORY$/compojure/compojure/1.6.1/compojure-1.6.1.jar!/compojure/core.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
@@ -497,27 +514,8 @@
     <entry file="file://$PROJECT_DIR$/src/clj/libreria_alvarez_api/middleware/formats.clj">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.10.0/clojure-1.10.0.jar!/clojure/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="325" column="89" selection-start-line="325" selection-start-column="83" selection-end-line="325" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/migrations/20190113210323-pecios.up.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/migrations/20190113210323-pecios.down.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/migrations/20190113210323-pecios.up.sql" />
+    <entry file="file://$PROJECT_DIR$/resources/migrations/20190113210323-pecios.down.sql" />
     <entry file="file://$PROJECT_DIR$/resources/migrations/20190207143854-precios-json.down.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -570,13 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/libreria_alvarez_api/routes/home.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/clj/libreria_alvarez_api/excel_etl/core.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -625,13 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test-config.edn">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -658,15 +642,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clj/libreria_alvarez_api/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
+        <state relative-caret-position="850">
           <caret line="50" column="61" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
         </state>
       </provider>
     </entry>
@@ -679,8 +656,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clj/libreria_alvarez_api/routes/services.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
+        <state relative-caret-position="779">
           <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.nrepl-port">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Capstanfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="793">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.10.0/clojure-1.10.0.jar!/clojure/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="681">
+          <caret line="190" column="7" lean-forward="true" selection-start-line="190" selection-start-column="7" selection-end-line="190" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/libreria_alvarez_api/routes/home.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>

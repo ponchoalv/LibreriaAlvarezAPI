@@ -7,5 +7,7 @@
 
 
 (defroutes home-routes
-  (GET "/" [] (response/file-response "index.html" {:root "public"})))
+  (GET "/" [] {:status  200
+               :headers {"Content-Type" "text/html"}
+               :body    (io/file "resources/public/index.html")}))
 

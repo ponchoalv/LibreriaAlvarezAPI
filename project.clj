@@ -4,6 +4,7 @@
   :url "http://example.com/FIXME"
 
   :dependencies [[buddy "2.0.0"]
+                 [buddy/buddy-sign "2.2.0"]
                  [cheshire "5.8.1"]
                  [clojure.java-time "0.3.2"]
                  [compojure "1.6.1"]

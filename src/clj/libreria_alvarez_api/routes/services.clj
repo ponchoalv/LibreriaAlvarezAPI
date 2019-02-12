@@ -7,7 +7,8 @@
             [buddy.auth :refer [authenticated?]]
             [libreria-alvarez-api.excel-service-provider.core :as price-service]
             [ring.swagger.upload :as upload]
-            [libreria-alvarez-api.excel-etl.core :as etl])
+            [libreria-alvarez-api.excel-etl.core :as etl]
+            [libreria-alvarez-api.login-service.core :as login])
   (:import (java.time LocalDate)))
 
 (defn access-error [_ _]
@@ -38,6 +39,10 @@
 (s/defschema ListasCargadas [{:registros s/Int
                               :lista s/Str
                               :fecha LocalDate}])
+
+(s/defschema LoginResponse {:token s/Str})
+
+(s/defschema SuccessResponse {:result s/Str})
 
 (def service-routes
   (api
@@ -70,6 +75,21 @@
                                        (tipo-lista etl/know-columns-maps) nombre-lista fecha)]
               (price-service/load-datasheet-on-db-json fecha nombre-lista lista-in-memory)
               {:success true})))
+
+      (POST "/login" []
+        :return LoginResponse
+        :form-params [username :- s/Str
+                      password :- s/Str]
+        :summary "Metodo utilizado para el login de usuarios."
+        (login/login-handler {:username username
+                              :password password}))
+
+      (POST "/add-user" []
+        :return SuccessResponse
+        :form-params [username :- s/Str
+                      password :- s/Str]
+        :summary "Metodo utilizado para el registro de usuarios"
+        (login/add-user! username password))
 
       (GET "/prices-by-fecha" []
         :return      PriceListJson

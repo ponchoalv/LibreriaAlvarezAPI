@@ -24,3 +24,13 @@ SELECT json_array_length(precios -> 'data') as registros, lista, fecha FROM prec
 -- :doc delete all lists by list-name and date.
 DELETE FROM precios_json
 WHERE LISTA = :lista AND fecha = :fecha
+
+-- :name login :? :*
+-- :doc find user login
+SELECT username FROM users
+WHERE username = :username AND password = :password
+
+-- :name add-user! :! :n
+-- :doc find user login
+INSERT INTO users
+(username, password) VALUES (:username, :password)

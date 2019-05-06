@@ -78,7 +78,7 @@
 
       (POST "/login" []
         :return LoginResponse
-        :form-params [username :- s/Str
+        :multipart-params [username :- s/Str
                       password :- s/Str]
         :summary "Metodo utilizado para el login de usuarios."
         (login/login-handler {:username username
@@ -86,7 +86,7 @@
 
       (POST "/add-user" []
         :return SuccessResponse
-        :form-params [username :- s/Str
+        :multipart-params [username :- s/Str
                       password :- s/Str]
         :summary "Metodo utilizado para el registro de usuarios"
         (login/add-user! username password))

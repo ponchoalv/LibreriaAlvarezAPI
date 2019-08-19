@@ -10,7 +10,7 @@
                                 :B :code
                                 :D :price}})
 
-(def decimal-format (DecimalFormat. "#.###.###.##0,00"))
+(def decimal-format (DecimalFormat. "#,###,###,##0.00"))
 
 (defn ^:private filter-data [{:keys [code desc price]}]
   (and (not (nil? code))
@@ -21,7 +21,7 @@
   (let [{:keys [code desc price]} columns-data]
     {:code  (clojure.string/upper-case (clojure.string/trim (str code)))
      :desc  (clojure.string/upper-case (clojure.string/trim desc))
-     :price (.parse decimal-format (clojure.string/replace (str price) "." ","))
+     :price (.parse decimal-format (str price))
      :lista (clojure.string/upper-case spreadsheet-name)
      :fecha fecha}))
 

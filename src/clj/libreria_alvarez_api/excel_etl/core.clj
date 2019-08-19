@@ -10,7 +10,7 @@
                                 :B :code
                                 :D :price}})
 
-(def decimal-format (DecimalFormat. "#,###,###,##0.00"))
+(def decimal-format (DecimalFormat. "#.###.###.##0,00"))
 
 (defn ^:private filter-data [{:keys [code desc price]}]
   (and (not (nil? code))

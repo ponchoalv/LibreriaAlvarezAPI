@@ -8,7 +8,8 @@
             [libreria-alvarez-api.excel-service-provider.core :as price-service]
             [ring.swagger.upload :as upload]
             [libreria-alvarez-api.excel-etl.core :as etl]
-            [libreria-alvarez-api.login-service.core :as login])
+            [libreria-alvarez-api.login-service.core :as login]
+            [libreria-alvarez-api.db.core :as db])
   (:import (java.time LocalDate)))
 
 (defn access-error [_ _]
@@ -121,4 +122,20 @@
       (GET "/get-list-types" []
         :return  s/Any
         :summary      "Los tipos de lista excel soportados por el sistema"
-        (ok (rest (s/explain TipoLista)))))))
+        (ok (rest (s/explain TipoLista))))
+
+      (GET "/get-ventas-by-day" []
+        :return s/Any
+        :query-params [fecha :- s/Str]
+        :summary "obtener las ventas por día"
+        (ok (db/get-ventas-by-day {:dia-ventas fecha})))
+
+      (GET "/get-ventas" []
+        :return s/Any
+        :summary "obtener todas las ventas cargadas en la base"
+        (ok (db/get-ventas)))
+
+      (POST "/add-venta" []
+        :body-params [monto :- s/Num, usuario :- s/Str]
+        :summary "carga una venta para un día especifico, y un usuario especifico"
+        (ok (db/add-venta! {:monto monto :usuario usuario}))))))

@@ -34,3 +34,16 @@ WHERE username = :username AND password = :password
 -- :doc find user login
 INSERT INTO users
 (username, password) VALUES (:username, :password)
+
+-- :name add-venta! :! :N
+-- :doc add a sale to the database
+INSERT INTO ventas
+(monto, usuario) VALUES (:monto, :usuario)
+
+-- :name get-ventas-by-day :? :*
+-- :doc get sales for a specific date
+SELECT * FROM ventas
+WHERE cast(DATE_TRUNC('day', fecha) as varchar(10)) = :dia-ventas
+
+-- :name get-ventas :? :*
+SELECT * FROM ventas

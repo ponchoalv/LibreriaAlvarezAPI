@@ -44,6 +44,7 @@ INSERT INTO ventas
 -- :doc get sales for a specific date
 SELECT * FROM ventas
 WHERE cast(DATE_TRUNC('day', fecha) as varchar(10)) = :dia-ventas
+ORDER BY fecha DESC
 
 -- :name get-ventas :? :*
 -- :doc get all loaded sales
@@ -52,3 +53,7 @@ SELECT * FROM ventas
 -- :name get-dates-with-sales :? :*
 -- :doc get all dates where a sale was done
 SELECT cast(DATE_TRUNC('day', fecha)  as varchar(10)) as fecha FROM ventas GROUP BY cast(DATE_TRUNC('day', fecha) as varchar(10)) ORDER BY cast(DATE_TRUNC('day', fecha) as varchar(10)) DESC
+
+-- :name delete-venta-by-date! :! :n
+-- :doc delete an specific date
+DELETE FROM ventas WHERE cast(fecha as varchar(26)) = :fecha

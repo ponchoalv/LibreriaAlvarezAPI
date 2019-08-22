@@ -143,4 +143,9 @@
       (GET "/get-fechas-con-ventas" []
         :return s/Any
         :summary "obtner todas las fechas donde hubo ventas"
-        (ok (db/get-dates-with-sales))))))
+        (ok (db/get-dates-with-sales)))
+      (POST "/remove-sale-by-date" []
+        :return s/Int
+        :body-params [fecha :- s/Str]
+        :summary "obtiene la fecha en formato 2019-08-22T00:05:16.812272 y elimina el registro de la venta"
+        (ok (db/delete-venta-by-date! {:fecha (clojure.string/replace fecha "T" " ")}))))))

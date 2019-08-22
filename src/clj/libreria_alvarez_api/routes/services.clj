@@ -138,4 +138,9 @@
       (POST "/add-venta" []
         :body-params [monto :- s/Num, usuario :- s/Str]
         :summary "carga una venta para un día especifico, y un usuario especifico"
-        (ok (db/add-venta! {:monto monto :usuario usuario}))))))
+        (ok (db/add-venta! {:monto monto :usuario usuario})))
+
+      (GET "/get-fechas-con-ventas" []
+        :return s/Any
+        :summary "obtner todas las fechas donde hubo ventas"
+        (ok (db/get-dates-with-sales))))))
